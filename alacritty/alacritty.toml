@@ -1,0 +1,14 @@
+import = ["~/.config/alacritty/themes/themes/tokyo-night-storm.toml"]
+
+[shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "mise exec -- tmux a -t default || mise exec -- tmux new -s default"]
+
+[window]
+dimensions = { columns = 200, lines = 48}
+opacity = 0.8
+
+[font]
+normal = { family = "HackGen Console NF", style = "Regular" }
+bold = { style = "Bold" }
+size = 11
