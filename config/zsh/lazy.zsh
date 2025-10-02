@@ -1,5 +1,5 @@
 # env
-export SHELL=/bin/zsh
+export SHELL=/usr/bin/zsh
 export EDITOR=vim
 
 # tools
@@ -13,8 +13,8 @@ type rg > /dev/null && alias grep='rg'
 type eza > /dev/null && alias ls='eza --icons'
 type bat > /dev/null && alias cat='bat'
 type fd > /dev/null && alias find='fd'
-type ncdu > /dev/null && alias du='ncdu'
-type btm > /dev/null && alias top='btm'
+type dust > /dev/null && alias du='dust'
+type btop++ > /dev/null && alias top='btop++'
 type procs > /dev/null && alias ps='procs'
 
 # functions

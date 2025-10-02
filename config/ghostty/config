@@ -1,0 +1,9 @@
+theme = TokyoNight Storm
+
+font-family = HackGen Console NF
+font-feature = -dlig
+font-size = 14
+
+window-theme = ghostty
+
+background-opacity = 0.85

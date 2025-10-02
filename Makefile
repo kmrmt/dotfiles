@@ -1,24 +1,28 @@
-CONF_DIR := $HOME/.config
-CONF_FILES := alacritty git mise sheldon tmux zsh starship.toml
+CONF_DIR := $(HOME)/.config
+TARGET := git mise sheldon zsh starship.toml ghostty
+CONF := $(addprefix config/,$(TARGET))
 
-def symlimk
-	ln -s $(1) $(2)
-endef
-
-def symlimk1
-	$(call symlimk, ./$(1), $(CONF_DIR)/$(1))
+define symlink
+	ln -s $(abspath $(1)) $(2)
 endef
 
 .PHONY: install/mise
-install/mise:
+install/mise: init
 	curl https://mise.run | sh
 
-init: $(CONF_DIR) zshenv
-	$(foreach cfg,$(CONF_FILES),$(call symlimk1, $(cfg)))
+.PHONY: init
+init: install/zshenv install/config
 
-.PHONY: zshenv
-zshenv:
-	$(call symlimk, zshenv, $(HOME)/.zshenv)
+.PHONY: install/config
+install/config: $(CONF)
+
+.PHONY: $(CONF)
+$(CONF):
+	$(call symlink,$@,$(HOME)/.config/$(subst config/,,$@))
+
+.PHONY: install/zshenv
+install/zshenv:
+	$(call symlink,config/zshenv,$(HOME)/.zshenv)
 
 $(CONF_DIR):
 	mkdir -p $(CONF_DIR)

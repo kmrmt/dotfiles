@@ -21,7 +21,7 @@ github = "romkatv/zsh-defer"
 apply = ['source']
 
 [plugins.compinit]
-inline = 'autoload -Uz compinit && zsh-defer compinit -i'
+inline = 'autoload -Uz compinit && compinit -i'
 
 [plugins.zsh-autosuggestions]
 github = 'zsh-users/zsh-autosuggestions'
@@ -33,11 +33,11 @@ github = 'zsh-users/zsh-completions'
 [plugins.F-Sy-H]
 github = 'zdharma/fast-syntax-highlighting'
 
-[plugins.starship]
-inline = 'eval "$(starship init zsh)"'
-
 [plugins.mise]
 inline = 'eval "$(mise activate zsh)"'
+
+[plugins.starship]
+inline = 'eval "$(starship init zsh)"'
 
 [plugins.zoxide]
 inline = 'eval "$(zoxide init zsh --hook prompt)"'

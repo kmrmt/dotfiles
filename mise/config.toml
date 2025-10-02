@@ -1,9 +1,0 @@
-[tools]
-ghq = "latest"
-kubectl = "latest"
-github-cli = "latest"
-tmux = "latest"
-python = "3.12"
-go = "latest"
-jq = "latest"
-rust = "stable"

@@ -1,1 +1,4 @@
-.zshrc.zwc
+*.zwc
+sheldon.zsh
+.zcompdump
+.vscode
