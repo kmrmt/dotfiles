@@ -2,15 +2,28 @@
 ghq = "latest"
 kubectl = "latest"
 github-cli = "latest"
-python = "3.12"
+python = "latest"
 go = "latest"
 jq = "latest"
 rust = "stable"
 "cargo:sheldon" = "latest"
 "cargo:zoxide" = "latest"
-gh = "latest"
 starship = "latest"
 "cargo:skim" = "latest"
 node = "latest"
 "npm:@google/gemini-cli" = "latest"
 "cargo:du-dust" = "latest"
+"cargo:eza" = "latest"
+"npm:@devcontainers/cli" = "latest"
+"npm:@openai/codex" = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
+"cargo:fd-find" = "latest"
+"cargo:git-delta" = "latest"
+"cargo:bat" = "latest"
+cargo-binstall = "latest"
+
+[settings]
+experimental = true
+
+[settings.cargo]
+binstall = true
