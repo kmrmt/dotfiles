@@ -1,8 +1,6 @@
 [tools]
 ghq = "latest"
 kubectl = "latest"
-github-cli = "latest"
-python = "latest"
 go = "latest"
 jq = "latest"
 rust = "stable"
@@ -11,19 +9,47 @@ rust = "stable"
 starship = "latest"
 "cargo:skim" = "latest"
 node = "latest"
-"npm:@google/gemini-cli" = "latest"
 "cargo:du-dust" = "latest"
 "cargo:eza" = "latest"
 "npm:@devcontainers/cli" = "latest"
 "npm:@openai/codex" = "latest"
-"npm:@anthropic-ai/claude-code" = "latest"
 "cargo:fd-find" = "latest"
 "cargo:git-delta" = "latest"
 "cargo:bat" = "latest"
 cargo-binstall = "latest"
+uv = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+"go:golang.org/x/tools/cmd/goimports" = "latest"
+k3d = "latest"
+helm = "latest"
+k9s = "latest"
+stern = "latest"
+minikube = "latest"
+bun = "latest"
+"github:cli/cli" = "latest"
+"npm:@github/copilot" = "latest"
+"go:github.com/golangci/golangci-lint/v2/cmd/golangci-lint" = "latest"
+"go:github.com/wagoodman/dive" = "latest"
+"go:github.com/orisano/dlayer" = "latest"
+"npm:@google/jules" = "latest"
+"cargo:needle-cli" = "latest"
+"cargo:cargo-llvm-cov" = "latest"
+claude = "latest"
+opencode = "latest"
+gemini = "latest"
+gum = "latest"
 
 [settings]
 experimental = true
 
 [settings.cargo]
 binstall = true
+
+[settings.pipx]
+uvx = true
+
+[settings.npm]
+bun = true
+
+[env]
+

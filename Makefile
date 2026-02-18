@@ -8,7 +8,7 @@ define symlink
 endef
 
 .PHONY: install/mise
-install/mise: init
+install/mise: link/config
 	curl https://mise.run | sh
 
 .PHONY: link/config
